@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LAPTOP-P3C7OO11.Group05_NDS"
+  DTS:DTSID="{876AE646-38D3-4C06-B53E-10C7A796D3B1}"
+  DTS:CreationName="ADO">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-82VCDP1\SQLEXPRESS;Initial Catalog=Group05_NDS;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-AirQuality-{876AE646-38D3-4C06-B53E-10C7A796D3B1}LAPTOP-P3C7OO11.Group05_NDS;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

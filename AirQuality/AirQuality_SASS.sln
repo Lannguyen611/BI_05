@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "AirQuality_SASS", "AirQuality_SASS\AirQuality_SASS.dwproj", "{0A6DAC00-12B3-44F0-B3D6-199CF948E3D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A6DAC00-12B3-44F0-B3D6-199CF948E3D4}.Development|Default.ActiveCfg = Development
+		{0A6DAC00-12B3-44F0-B3D6-199CF948E3D4}.Development|Default.Build.0 = Development
+		{0A6DAC00-12B3-44F0-B3D6-199CF948E3D4}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4362C125-8C76-47DA-9097-331C5BA428C6}
+	EndGlobalSection
+EndGlobal

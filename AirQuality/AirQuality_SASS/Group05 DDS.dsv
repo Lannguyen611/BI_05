@@ -1,0 +1,222 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="914ba28e-aa0a-4f7e-9662-f6845f336f61" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Group05 DDS</ID>
+  <Name>Group05 DDS</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Group05 DDS</DataSourceID>
+  <Schema>
+    <xs:schema id="Group05_x0020_DDS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Group05_x0020_DDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="3ec0a1c4-12b3-47dc-88d6-c8e40e6f1b91">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Dim_AQI_Category" msprop:DbTableName="Dim_AQI_Category" msprop:FriendlyName="Dim_AQI_Category" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="df39326b-ab0e-4b64-b98c-2c8f5eaa1c37">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AQICategoryID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="AQICategoryID" msprop:DbColumnName="AQICategoryID" msprop:design-time-name="63ae81bd-d252-4882-b349-f35193b783c4" type="xs:int" />
+                  <xs:element name="AQICategory" msprop:FriendlyName="AQICategory" msprop:DbColumnName="AQICategory" msprop:design-time-name="f20f2801-ba2a-46e9-a6b0-3228d5b76472">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_County" msprop:DbTableName="Dim_County" msprop:FriendlyName="Dim_County" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="61c7df9d-f63d-4027-9d2e-758d6213c0c5">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CountyID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="CountyID" msprop:DbColumnName="CountyID" msprop:design-time-name="d905605b-6596-463a-806e-2884d7478d23" type="xs:int" />
+                  <xs:element name="CountyName" msprop:FriendlyName="CountyName" msprop:DbColumnName="CountyName" msprop:design-time-name="b5bbbbb9-72d8-4a88-8855-0c2994f7545c">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CountyCode" msprop:FriendlyName="CountyCode" msprop:DbColumnName="CountyCode" msprop:design-time-name="97585df5-ed19-4d5d-ae8a-cbd16b57fdbb">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StateSK" msprop:FriendlyName="StateSK" msprop:DbColumnName="StateSK" msprop:design-time-name="e420fc7d-a5e5-4b28-976f-e3f4cca50b96" type="xs:int" minOccurs="0" />
+                  <xs:element name="CountyFIPS" msprop:FriendlyName="CountyFIPS" msprop:DbColumnName="CountyFIPS" msprop:design-time-name="5654fe4f-5ea8-4b42-9281-8346a2325859" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Latitude" msprop:FriendlyName="Latitude" msprop:DbColumnName="Latitude" msprop:design-time-name="baf9babc-3f66-4372-aba9-babbacb8fa32" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Longitude" msprop:FriendlyName="Longitude" msprop:DbColumnName="Longitude" msprop:design-time-name="06a0862e-8a60-4248-a24c-fd9a8f011511" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Population" msprop:FriendlyName="Population" msprop:DbColumnName="Population" msprop:design-time-name="16a6fd80-499e-414b-b05c-bcc9d3b451eb" type="xs:int" minOccurs="0" />
+                  <xs:element name="Status" msprop:FriendlyName="Status" msprop:DbColumnName="Status" msprop:design-time-name="8f03fef6-4f21-4b00-bc47-2aa9046c72a4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Date" msprop:DbTableName="Dim_Date" msprop:FriendlyName="Dim_Date" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="0449e064-279c-4122-be9b-c6d1048d01ed">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="DateID" msprop:DbColumnName="DateID" msprop:design-time-name="19fd60fa-c1eb-446c-a958-b4a01ea11770" type="xs:int" />
+                  <xs:element name="Date" msprop:FriendlyName="Date" msprop:DbColumnName="Date" msprop:design-time-name="77d4cdb2-1758-436e-bc59-0b6287f2e3c7" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Day" msprop:FriendlyName="Day" msprop:DbColumnName="Day" msprop:design-time-name="cc00e110-a81c-4a90-95c6-d365bf5f9a53" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:design-time-name="975ee851-9b6b-471a-a673-bc327cd13062" type="xs:int" minOccurs="0" />
+                  <xs:element name="Quarter" msprop:FriendlyName="Quarter" msprop:DbColumnName="Quarter" msprop:design-time-name="aef5fe88-c8aa-4bfa-bdb1-668985be62aa" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="a76d43e5-5480-4c70-86df-e72957fbd1ae" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_State" msprop:DbTableName="Dim_State" msprop:FriendlyName="Dim_State" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="fa0aac48-d345-42b9-a515-646c378758a6">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="StateSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="StateSK" msprop:DbColumnName="StateSK" msprop:design-time-name="8a94920c-33c7-4cc1-82e8-a06afc056a9b" type="xs:int" />
+                  <xs:element name="StateID" msprop:FriendlyName="StateID" msprop:DbColumnName="StateID" msprop:design-time-name="17febf95-b49b-4052-bdc4-93103d289aad" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StateName" msprop:FriendlyName="StateName" msprop:DbColumnName="StateName" msprop:design-time-name="32fe3ba9-e5d9-4b96-95e8-a6bfe4480f0b">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StateCode" msprop:FriendlyName="StateCode" msprop:DbColumnName="StateCode" msprop:design-time-name="a98a19ba-ac95-49be-82b3-acb706a8d0d1">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Status" msprop:FriendlyName="Status" msprop:DbColumnName="Status" msprop:design-time-name="7e2abb69-3ad1-4e6b-a429-c9291e366bec" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact_AirQuality" msprop:DbTableName="Fact_AirQuality" msprop:FriendlyName="Fact_AirQuality" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="430f2579-51f9-45fc-91de-e4b32bb02df1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AirQualityID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="AirQualityID" msprop:DbColumnName="AirQualityID" msprop:design-time-name="db9f0986-dc0e-4cfe-8eb9-16af8597dfb1" type="xs:int" />
+                  <xs:element name="CountyID" msprop:FriendlyName="CountyID" msprop:DbColumnName="CountyID" msprop:design-time-name="1d5d00c3-6ce2-48ba-9810-8b707fcfbbb3" type="xs:int" minOccurs="0" />
+                  <xs:element name="AQICategoryID" msprop:FriendlyName="AQICategoryID" msprop:DbColumnName="AQICategoryID" msprop:design-time-name="cab076d4-753e-4e65-b50f-209b6bd94f52" type="xs:int" minOccurs="0" />
+                  <xs:element name="AQI" msprop:FriendlyName="AQI" msprop:DbColumnName="AQI" msprop:design-time-name="82dc7b7d-90da-48ac-be90-350467a98017" type="xs:int" minOccurs="0" />
+                  <xs:element name="DateID" msprop:FriendlyName="DateID" msprop:DbColumnName="DateID" msprop:design-time-name="f27b38da-6b19-4bc2-bb7a-a9c46fd3f732" type="xs:int" minOccurs="0" />
+                  <xs:element name="DefiningParameter" msprop:FriendlyName="DefiningParameter" msprop:DbColumnName="DefiningParameter" msprop:design-time-name="d407feeb-547a-4d06-b320-b3bdcde4d536" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DefiningSite" msprop:FriendlyName="DefiningSite" msprop:DbColumnName="DefiningSite" msprop:design-time-name="a2fb5119-99fb-4923-9572-1635fa44d98c" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NumberOfSitesReporting" msprop:FriendlyName="NumberOfSitesReporting" msprop:DbColumnName="NumberOfSitesReporting" msprop:design-time-name="a525d30f-7374-41cb-82b2-47d21e9f5545" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_AQI_Category" />
+          <xs:field xpath="AQICategoryID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_County_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_County" />
+          <xs:field xpath="CountyID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Date" />
+          <xs:field xpath="DateID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_State_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_State" />
+          <xs:field xpath="StateSK" />
+        </xs:unique>
+        <xs:unique name="dbo_Fact_AirQuality_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_AirQuality" />
+          <xs:field xpath="AirQualityID" />
+        </xs:unique>
+        <xs:keyref name="FK__Fact_AirQ__DateI__4D2A7347" refer="dbo_Dim_Date_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_AirQuality" />
+          <xs:field xpath="DateID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_AirQ__AQICa__4C364F0E" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact_AirQuality" />
+          <xs:field xpath="AQICategoryID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fact_AirQ__Count__4B422AD5" refer="dbo_Dim_County_Constraint1">
+          <xs:selector xpath=".//dbo_Fact_AirQuality" />
+          <xs:field xpath="CountyID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Dim_Count__State__467D75B8" refer="dbo_Dim_State_Constraint1">
+          <xs:selector xpath=".//dbo_Dim_County" />
+          <xs:field xpath="StateSK" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Group05_x0020_DDS xmlns="" />
+  </Schema>
+</DataSourceView>
